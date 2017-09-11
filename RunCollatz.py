@@ -2,8 +2,8 @@
 
 # ------------------------------
 # projects/collatz/RunCollatz.py
-# Copyright (C) 2016
-# Glenn P. Downing
+# Copyright (C) 2017
+# Juan Trejo
 # ------------------------------
 
 # -------
