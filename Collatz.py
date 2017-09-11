@@ -31,7 +31,12 @@ def collatz_eval(i, j):
     """
     assert(i > 0 and j > 0)
     max_cycle = 1
-    for n in range(i, j + 1):
+    #Optimization
+    mid = j // 2
+    if mid > i:
+        i = mid
+    
+    for n in range(min(i, j), max(i, j + 1)):
         cycle = collatz_cycle(n)
         if cycle > max_cycle:
             max_cycle = cycle
@@ -52,10 +57,11 @@ def collatz_cycle(n):
     cycle_length = 1
     while n > 1:
         if n % 2 == 0:
-            n /= 2
+            n = n // 2
+            cycle_length += 1
         else:
-            n = 3 * n + 1
-        cycle_length += 1
+            n = n + (n >> 1) + 1
+            cycle_length += 2
     assert(cycle_length > 0)
     return cycle_length
 
