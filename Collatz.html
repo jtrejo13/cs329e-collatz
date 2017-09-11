@@ -8,11 +8,11 @@
 <td valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Collatz</strong></big></big></font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/usr/cs329e/collatz/Collatz.py">/usr/cs329e/collatz/Collatz.py</a></font></td></tr></table>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/usr/cs329e/Collatz.py">/usr/cs329e/Collatz.py</a></font></td></tr></table>
     <p><tt>#&nbsp;---------------------------<br>
 #&nbsp;projects/collatz/Collatz.py<br>
-#&nbsp;Copyright&nbsp;(C)&nbsp;2016<br>
-#&nbsp;Glenn&nbsp;P.&nbsp;Downing<br>
+#&nbsp;Copyright&nbsp;(C)&nbsp;2017<br>
+#&nbsp;Juan&nbsp;Trejo<br>
 #&nbsp;---------------------------</tt></p>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
@@ -21,7 +21,10 @@
 <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
     
 <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><dl><dt><a name="-collatz_eval"><strong>collatz_eval</strong></a>(i, j)</dt><dd><tt>i&nbsp;the&nbsp;beginning&nbsp;of&nbsp;the&nbsp;range,&nbsp;inclusive<br>
+<td width="100%"><dl><dt><a name="-collatz_cycle"><strong>collatz_cycle</strong></a>(n)</dt><dd><tt>compute&nbsp;collatz&nbsp;cycle&nbsp;length<br>
+n&nbsp;int&nbsp;to&nbsp;be&nbsp;computed<br>
+return&nbsp;the&nbsp;cycle&nbsp;length&nbsp;of&nbsp;n</tt></dd></dl>
+ <dl><dt><a name="-collatz_eval"><strong>collatz_eval</strong></a>(i, j)</dt><dd><tt>i&nbsp;the&nbsp;beginning&nbsp;of&nbsp;the&nbsp;range,&nbsp;inclusive<br>
 j&nbsp;the&nbsp;end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;the&nbsp;range,&nbsp;inclusive<br>
 return&nbsp;the&nbsp;max&nbsp;cycle&nbsp;length&nbsp;of&nbsp;the&nbsp;range&nbsp;[i,&nbsp;j]</tt></dd></dl>
  <dl><dt><a name="-collatz_print"><strong>collatz_print</strong></a>(w, i, j, v)</dt><dd><tt>print&nbsp;three&nbsp;ints<br>
