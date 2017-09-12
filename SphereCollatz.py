@@ -7,6 +7,7 @@
 # ---------------------------
 
 import sys
+lazy_cache = {}
 
 # ------------
 # collatz_read
@@ -41,11 +42,27 @@ def collatz_eval(i, j):
         low = mid
     
     for n in range(low, high + 1):
-        cycle = collatz_cycle(n)
+        cycle = collatz_cache(n)
         if cycle > max_cycle:
             max_cycle = cycle
     assert(max_cycle > 0)
     return max_cycle
+
+# ------------
+# collatz_cache (helper)
+# ------------
+
+def collatz_cache(n):
+    """
+        retrieve collatz cycle length from cache
+        n int to be retrieved
+        return the cycle length of n
+        """
+    if n in lazy_cache:
+        return lazy_cache[n]
+    lazy_cache[n] = collatz_cycle(n)
+    return lazy_cache[n]
+
 
 # ------------
 # collatz_cycle (helper)
