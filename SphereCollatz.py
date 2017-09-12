@@ -32,13 +32,15 @@ def collatz_eval(i, j):
         return the max cycle length of the range [i, j]
         """
     assert(i > 0 and j > 0)
+    low = min(i, j)
+    high = max(i, j)
     max_cycle = 1
     #Optimization
-    mid = j // 2
-    if mid > i:
-        i = mid
+    mid = high // 2
+    if mid > low:
+        low = mid
     
-    for n in range(min(i, j), max(i, j + 1)):
+    for n in range(low, high + 1):
         cycle = collatz_cycle(n)
         if cycle > max_cycle:
             max_cycle = cycle
