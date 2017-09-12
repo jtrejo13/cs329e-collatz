@@ -6,6 +6,8 @@
 # Juan Trejo
 # ---------------------------
 
+lazy_cache = {}
+
 # ------------
 # collatz_read
 # ------------
@@ -30,13 +32,36 @@ def collatz_eval(i, j):
     return the max cycle length of the range [i, j]
     """
     assert(i > 0 and j > 0)
+    low = min(i, j)
+    high = max(i, j)
     max_cycle = 1
-    for n in range(i, j + 1):
-        cycle = collatz_cycle(n)
+    #Optimization
+    mid = high // 2
+    if mid > low:
+        low = mid
+    
+    for n in range(low, high + 1):
+        cycle = collatz_cache(n)
         if cycle > max_cycle:
             max_cycle = cycle
     assert(max_cycle > 0)
     return max_cycle
+
+# ------------
+# collatz_cache (helper)
+# ------------
+
+def collatz_cache(n):
+    """
+        retrieve collatz cycle length from cache
+        n int to be retrieved
+        return the cycle length of n
+    """
+    if n in lazy_cache:
+        return lazy_cache[n]
+    lazy_cache[n] = collatz_cycle(n)
+    return lazy_cache[n]
+
 
 # ------------
 # collatz_cycle (helper)
@@ -52,10 +77,11 @@ def collatz_cycle(n):
     cycle_length = 1
     while n > 1:
         if n % 2 == 0:
-            n /= 2
+            n = n // 2
+            cycle_length += 1
         else:
-            n = 3 * n + 1
-        cycle_length += 1
+            n = n + (n >> 1) + 1
+            cycle_length += 2
     assert(cycle_length > 0)
     return cycle_length
 
