@@ -1,3 +1,120 @@
+commit 056a1df2fecf5cf78cc31e03f9dc13e755ee4ec7
+Merge: 566179c 6cfdba7
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Sep 12 19:39:09 2017 -0500
+
+    Updated Test.out
+
+commit 6cfdba702a0feb845e834e6440bc0d6e0e70bb62
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Sep 12 19:37:20 2017 -0500
+
+    Updated TestCollatz.out
+
+commit 566179c8948c17cff4622866051217b6cd1dec44
+Merge: 6ffa4ea 502b039
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 22:44:39 2017 -0500
+
+    Updated RunCollatz.out in master
+
+commit 502b039c6af3981538a60a307a64afe953579112
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 22:34:19 2017 -0500
+
+    Implemented lazy cache optimization
+
+commit 27e8e446bc1236c4b3c9da1b8dcf1cadeadf65df
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 21:42:29 2017 -0500
+
+    Updated unit tests to include [max, min] case
+
+commit 0c33d5163562c9bce3d3dc6d7f3319e79c45cfa4
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 21:31:28 2017 -0500
+
+    Updated SphereCollatz.py
+
+commit 4cb4006f31c3488d489f56e89af2482a85c3dd38
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 21:09:00 2017 -0500
+
+    Added new line at end of RunCollatz.out
+
+commit 5268df72a77fc65d6d0ed7d986851a6eb3d164e3
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 20:59:44 2017 -0500
+
+    Resolved bug in Collatz.py
+
+commit 7ba8c51f0d9c46a3fca5b52737b9acc9a5f43369
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 14:48:25 2017 -0500
+
+    Optimized collatz with bit shift division and added acceptance tests
+
+commit 6ffa4ea6269378bccc51ffad8644420a235ba721
+Merge: 9b566dd 199c329
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 14:10:35 2017 -0500
+
+    Updated acceptance tests
+
+commit 199c329bb6c5e2c8da59d8d085e5a5432d5b0fa7
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 13:04:27 2017 -0500
+
+    Added more acceptance tests
+
+commit 9b566ddbc7e5c1d4aef51d5ed7c39278605b5b74
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 12:41:02 2017 -0500
+
+    Updated RunCollatz.out
+
+commit 7f930848ada1eadea53bfbc95fbf97342a55441d
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 12:29:08 2017 -0500
+
+    Created SphereCollatz and submitted to sphere (test ran but didn't pass)
+
+commit 30bf6514afea671c9df50ab50460782e6753d71f
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 10:46:18 2017 -0500
+
+    Implemented naive Collatz. All unit tests passing
+
+commit f276b8f97086d34a8c419092bd712dd86b45a09f
+Author: Juan <jtrj33@gmail.com>
+Date:   Mon Sep 11 10:20:30 2017 -0500
+
+    Added unit tests
+
+commit ce9b0eb435bf2c3d581a79da1a5d29c507c01589
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Sep 5 21:20:01 2017 -0500
+
+    Fixed the unit tests in TestCollatz.py
+
+commit b8cf992f99694cdeb4c673c9769d4091a26ee912
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Sep 5 20:18:31 2017 -0500
+
+    Deleted files from git to be ignored
+
+commit 36bd324e6f2d8b232c0a72ca274ca60e5eeaa67c
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Sep 5 19:05:21 2017 -0500
+
+    Updated .gitignore file
+
+commit f109842bf722e5f73a17f096b91727d1cef9b670
+Author: Juan <jtrj33@gmail.com>
+Date:   Tue Sep 5 19:00:11 2017 -0500
+
+    Commit of working initial Collatz build
+
 commit e0169663fe87a841d4ccc162dc360a598fcf7c56
 Author: Juan Trj <jtrejo13@utexas.edu>
 Date:   Tue Sep 5 18:24:30 2017 -0500

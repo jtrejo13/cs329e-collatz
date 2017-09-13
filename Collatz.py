@@ -12,6 +12,7 @@ lazy_cache = {}
 # collatz_read
 # ------------
 
+
 def collatz_read(s):
     """
     read two ints
@@ -25,6 +26,7 @@ def collatz_read(s):
 # collatz_eval
 # ------------
 
+
 def collatz_eval(i, j):
     """
     i the beginning of the range, inclusive
@@ -35,11 +37,11 @@ def collatz_eval(i, j):
     low = min(i, j)
     high = max(i, j)
     max_cycle = 1
-    #Optimization
+    # Optimization
     mid = high // 2
     if mid > low:
         low = mid
-    
+
     for n in range(low, high + 1):
         cycle = collatz_cache(n)
         if cycle > max_cycle:
@@ -50,6 +52,7 @@ def collatz_eval(i, j):
 # ------------
 # collatz_cache (helper)
 # ------------
+
 
 def collatz_cache(n):
     """
@@ -89,6 +92,7 @@ def collatz_cycle(n):
 # collatz_print
 # -------------
 
+
 def collatz_print(w, i, j, v):
     """
     print three ints
@@ -102,6 +106,7 @@ def collatz_print(w, i, j, v):
 # -------------
 # collatz_solve
 # -------------
+
 
 def collatz_solve(r, w):
     """
