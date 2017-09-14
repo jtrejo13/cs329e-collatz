@@ -6,7 +6,9 @@
 # Juan Trejo
 # ---------------------------
 
+#lazy cache that stores previously computed collatz cycle lengths
 lazy_cache = {}
+
 
 # ------------
 # collatz_read
